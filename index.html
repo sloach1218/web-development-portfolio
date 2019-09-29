@@ -6,41 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sarah Loach Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Heebo|Josefin+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700|Josefin+Slab:100,300,400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
+        <nav id="mobileNav" class="topnav">
+                <a href="#contact" class="link">Contact</a>
+                <a href="#about" class="link">About</a>
+                <a href="#projects" class="link">Projects</a>
+                
+            </nav>
     <header>
-        <img src="Images/sllogo.png" alt="logo">
         <h1>Sarah Loach</h1>
-        <nav>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <nav id="topNav">
+            <a href="#projects" class="link">Projects</a>
+            <a href="#about" class="link">About</a>
+            <a href="#contact" class="link">Contact</a>
+            <a id="icon" class=""><i class="fas fa-bars"></i></a>
         </nav>
     </header>
+    
     <main>
         <section id="intro">
-            <h2>Headline</h2>
-            <h4>Headline blurb</h4>
-            <nav>Social Nav Icons</nav>
+            <h2>Hi there! My name is <span style="color:#972086;">Sarah</span>.</h2>
+            <h4>I'm a Visual Designer and Front-end Web Developer currently located in the Milwaukee area.</h4>
+            <h5>Let's connect!</h5>
+            <nav>
+                <a href="https://github.com/sloach1218"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sloach"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:sarah@loach.us"><i class="fas fa-at"></i></a>
+            </nav>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <div class="flexContainer">
-                <div></div>
-                <div></div>
+                <section class="projectCont">
+                    <a href="https://sloach1218.github.io/color-quiz/"><img src="Images/colorQuiz.png" alt="Color Quiz Screenshot" class="projectImg"></a>
+                    <div class="projectContent">
+                        <h3>Color Quiz</h3>
+                        <p>A quiz app created to test your knowledge of the color wheel.</p>
+                        <p>Created with:<br>HTML5, CSS3, JavaScript, jQuery</p>
+                        <a href="https://sloach1218.github.io/color-quiz/" class="projectLinks">View Project</a>
+                        <a href="https://github.com/sloach1218/color-quiz.git" class="projectLinks">View Code</a>
+                    </div>
+                </section>
+                
             </div>
             
         </section>
         <section id="about">
             <h2>About Me</h2>
-            <div>Professional Skills Blurb</div>
-            <div>Outside of Coding Blurb</div>
+            <h4>I'm a front-end web developer with a background in UX/UI design.
+            I love to create simple, elegant designs and then enhance the experience for the user with JavaScript and jQuery.
+            Beyond websites, I also have quite a bit of expereince with email and social media campaigns.<br><br>
+            When I'm not developing web experiences, you can catch me trying to keep my growing collection of house plants alive and photograph all the cute canines.</h4>
+            <a href="https://www.instagram.com/xoinfocus" target="_blank"><i class="fab fa-instagram"></i> My Two Cute Canines</a>
+            
+            
         </section>
     </main>
     <footer id="contact">
-        <button>Email Me</button>
-        <nav>Social Nav Icons</nav>
+        <h4>Please don't hesitate to connect: </h4>
+        <nav>
+            <a href="https://github.com/sloach1218"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sloach"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sarah@loach.us"><i class="fas fa-at"></i></a>
+        </nav>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

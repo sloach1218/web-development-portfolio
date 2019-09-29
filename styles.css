@@ -1,26 +1,22 @@
 *{box-sizing: border-box;}
 body{
     font-family: 'Heebo', Arial, Helvetica, sans-serif;
-    margin:0;}
+    margin:0;
+}
 header{
     width: 100%;
     height: 50px;
-    background-color: #008CBA;
+    background-color: #025;
     position: fixed;
     color: #fff;
+    top:0;
 }
-header img{
-    margin-left:20px;
-    height: 42px; 
-    width:auto;    
-    margin-top: 4px;
-}
+
 header h1{
     display: inline-block; 
-    margin:0; 
+    margin:0 0 0 20px; 
     line-height: 56px;
     vertical-align: top; 
-    margin-left:10px;
     font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size:32px;
@@ -38,11 +34,12 @@ header nav a{
 }
 section{
     width: 100%;
-    padding: 50px 20px;
-    border-bottom: 1px solid #ddd;
+    padding: 70px;
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
 }
 section#intro{
-    padding-top:100px;
+    padding-top:120px;
     text-align: center;
 }
 h2{
@@ -50,44 +47,193 @@ h2{
     margin-top: 0;
     font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
     font-weight: normal;
-    font-size:42px;
-    color: #008CBA;
+    font-size:50px;
+    color: #1846DC;
+    margin-bottom:5px;
 }
-.flexContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#intro h5{
+    font-weight: 600;
+    color: #972086;
+    font-size: 20px;
+    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+    margin: 5px 0 20px 0;
 }
 
-.flexContainer div{
-    width: 40%;
+#intro nav a{
+    font-size:28px;
+    padding: 0 8px;
+    color: #1846DC;
+    cursor: pointer;
+}
+#intro nav a:hover{
+    color: #025;
+}
+h4{
+    font-size: 24px;
+    margin: 5px 0 25px 0;
+    color:darkslategray;
+    font-weight:300;
+
+}
+#projects h2{margin-bottom:40px;}
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexContainer div.projectCont{
+    width: 90%;
     height: 250px;
     background-color: lightslategray;
     margin-top: 20px;
+    border-bottom: none;
+    
 }
-section#about div{
-    background-color: lightgray;
-    width: 90%;
+section.projectCont{padding:30px 20px;;}
+section.projectCont:first-of-type {
+    padding-top:10px;
+}
+section.projectCont:last-of-type {
+    border:none;
+}
+.projectCont .projectImg{
+    width: 60%;
+    height:auto;
+    float:left;
+}
+
+.projectCont .projectContent{
+    width:35%;
+    margin-left:5%;
+    float:left;
+    
+}
+.projectCont .projectContent p{
+    font-size: 20px;
+    margin: 8px 0;
+    font-weight: 300;
+}
+.projectCont .projectContent h3{
+    font-size:28px;
+    margin: 10px 0;
+    color: #972086;
+    font-weight: 400;
+}
+.projectCont .projectContent .projectLinks, #about a{
+    padding: 10px 14px;
+    cursor: pointer;
+    background-color: #1846DC;
+    border:none;
+    color:white;
+    margin: 10px 10px 0 0; 
+    font-size:14px;
+    text-decoration: none;
+    display: inline-block;
+}
+.projectCont .projectContent .projectLinks:hover, #about a:hover{
+    background-color:#025;
+}
+
+section#about h4{
+    text-align: center;
     margin: 0 auto;
-    margin-bottom: 10px;
-    padding:10px 20px;
+    font-size:20px;
 }
+section#about, section#about h4{
+    text-align: left;
+}
+#about i{margin-right:5px;}
+#about a {margin-top:20px;}
 footer{
-    background-color: lightgray;
+    background-color: #ddd;
     width:100%;
     text-align: center;
-    padding: 40px 0;
+    padding: 25px 30px;
     
+    
+}
+footer h4{
+    display: inline-block;
+    margin-bottom:5px;
+}
+footer button{
+    padding: 12px 18px;
+    border:none;
+    font-size:16px;
+    margin:0 10px;
+    background-color: #1846DC;
+    color:#fff;
+    cursor: pointer;
 }
 footer nav{
     display:inline-block;
-    margin-left: 20px;
+    margin-left: 5px;
 }
-@media screen and (max-width: 800px){
-    .flexContainer{
-        flex-wrap: wrap;
+footer nav a{
+    font-size:28px;
+    padding: 0 8px;
+    color: #1846DC;
+    cursor: pointer;
+    vertical-align: sub;
+}
+footer nav a:hover{
+    color: #025;
+}
+#icon{
+    display: none;
+}
+#mobileNav{
+    margin-top:50px;
+    padding:10px 20px;
+    overflow: hidden;
+    background-color: #025;
+    border-top:1px solid #ccc;
+    display:none;
+    position: fixed;
+    width:100%;
+}
+#mobileNav a{
+    float:right;
+    padding: 0 12px;
+    text-decoration: none;
+    color:white;
+    
+}
+
+
+@media screen and (max-width: 820px){
+    
+    section{
+        padding:50px 30px;
     }
-    .flexContainer div{
-        width: 90%;
+    section#intro{padding-top:100px;}
+    #intro h2{
+        font-size: 36px;
+        line-height: 42px;
     }
+    #intro h4{
+        font-size: 20px;
+    }
+    .projectCont .projectImg{
+        width: 100%;
+    }
+    
+    .projectCont .projectContent{
+        width:100%;
+        margin-left:0;        
+    }
+    #icon{
+        display: inline-block;
+        cursor: pointer;
+    }
+    #topNav .link{
+        display:none;
+    }
+    footer h4{font-size:22px;}
+    .responsive{
+        display: block !important; 
+    }
+
 }
