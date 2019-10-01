@@ -24,12 +24,3 @@ function mobileNavToggle2(){
 };
 $(mobileNavToggle2());
 
-/*function altNavToggle(){
-    $('#mobileNav').hide();
-    $('#topNav').on('click', function () {
-        $('#mobileNav').show();
-
-    }
-
-}
-$(altNavToggle());*/
