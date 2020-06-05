@@ -15,12 +15,12 @@ header{
 header h1{
     display: inline-block; 
     margin:0 0 0 20px; 
-    line-height: 56px;
+    line-height: 50px;
     vertical-align: top; 
-    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size:32px;
-    color:white;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size:26px;
+    color:#eee;
 }
 header nav{
     float:right; 
@@ -29,7 +29,7 @@ header nav{
 }
 header nav a{
     text-decoration: none;
-    color:#fff;
+    color:#eee;
     line-height: 48px;
     margin-left:10px;
 }
@@ -46,18 +46,21 @@ section#intro{
 h2{
     text-align: center; 
     margin-top: 0;
-    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     color: #1846DC;
     margin-bottom:5px;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 36px;
+    font-weight: 600;
+}
+#intro h2{
+    font-weight:500;
 }
 #intro h5{
     font-weight: 600;
     color: #972086;
     font-size: 20px;
-    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     margin: 5px 0 20px 0;
 }
 
@@ -78,7 +81,9 @@ h4{
     font-size: 20px;
 
 }
-#projects h2{margin-bottom:40px;}
+#projects h2{
+    margin-bottom:40px;
+}
 .flexContainer{
     display: flex;
     flex-direction: column;
@@ -119,11 +124,17 @@ section.projectCont:last-of-type {
     margin: 8px 0;
     font-weight: 300;
 }
+.projectCont .projectContent p:last-of-type {
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: 400;
+}
 .projectCont .projectContent h3{
-    font-size:28px;
+    font-size:26px;
     margin: 10px 0;
     color: #972086;
-    font-weight: 400;
+    font-weight: 600;
+    font-family: 'Quicksand';
 }
 .projectCont .projectContent .projectLinks, #about a{
     padding: 10px 14px;
@@ -220,8 +231,8 @@ footer nav a:hover{
     }
     section#intro{padding-top:120px;}
     #intro h2{
-        font-size:50px;
-        line-height: 60px;
+        font-size:42px;
+        line-height: 50px;
     }
     #intro h4{
         font-size: 24px;
